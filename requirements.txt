@@ -1,0 +1,18 @@
+# requirements.txt
+
+# For connecting to the Google Gemini API
+google-generativeai
+
+# Driver for Python to communicate with PostgreSQL
+psycopg2-binary
+
+# To read secret variables (like API keys) from the .env file
+python-dotenv
+
+# For efficient work with arrays and numbers (needed for vectors)
+numpy
+
+# Libraries for extracting text from files
+pypdf
+python-docx
+
