@@ -39,9 +39,9 @@ The system can index text from PDF and DOCX files, store it as vector embeddings
     cd jeen-ai-rag-project
 
 ### 3 Set Up a Virtual Environment
-    python -m venv .venv
+    python -m venv venv
     # Windows
-    .\.venv\Scripts\activate
+    venv\Scripts\activate
     # macOS / Linux
     source .venv/bin/activate
 

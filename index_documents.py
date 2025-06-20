@@ -7,7 +7,7 @@ import docx
 from typing import List, Tuple
 import google.generativeai as genai
 import re
-from psycopg2.extras import execute_values # --- NEW: More efficient for bulk inserts ---
+from psycopg2.extras import execute_values 
 
 
 # --- Part 1: Load Environment Variables & Config ---
@@ -50,7 +50,7 @@ def setup_database(conn):
             created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
         );
         """)
-        # --- NEW: Add an index for faster similarity search ---
+        # --- Add an index for faster similarity search ---
         print("Creating index on 'embedding' column if it doesn't exist...")
         cur.execute("""
         CREATE INDEX IF NOT EXISTS idx_embedding 
